@@ -1,0 +1,14 @@
+:root {
+
+   /* Colors */
+   --color-primary: #31338a;
+   --color-secundary: #7c67f0;
+
+   /* Fonts */
+   --font-primary: 'Ubuntu', Helvetica;
+
+   --font-size-smaller: 12px;
+   --font-size-small: 16px;
+   --font-size-mid: 20px;
+   --font-size-big: 40px;
+}
