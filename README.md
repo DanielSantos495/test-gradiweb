@@ -1,5 +1,4 @@
-# test-gradiweb Gradiweather
-Prueba técnica Gradiweb
+# Gradiweather
 
 Gradiweather es una pequeña app del clima que nos muestra el clima actual de Bogotá, Colombia y el pronóstico de los próximos 3 días. También nos da el clima actual de Paris, Francia.
 
