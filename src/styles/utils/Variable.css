@@ -1,14 +1,19 @@
 :root {
 
    /* Colors */
-   --color-primary: #31338a;
-   --color-secundary: #7c67f0;
+   --color-primary: #7c67f0 ;
+   --color-secundary: #31338a;
+   --color-tertiary: #E0DEEE;
 
    /* Fonts */
    --font-primary: 'Ubuntu', Helvetica;
 
    --font-size-smaller: 12px;
    --font-size-small: 16px;
-   --font-size-mid: 20px;
+   /* --font-size-mid: 20px;*/
+   --font-size-title: 30px;
    --font-size-big: 40px;
+
+   /* Radius */
+   --radius: 25px;
 }

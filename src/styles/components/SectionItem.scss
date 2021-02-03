@@ -1,0 +1,13 @@
+@import '../utils/Placeholder';
+
+.SectionItem {
+   @extend %section;
+   h2 {
+      font-weight: 300;
+      font-size: var(--font-size-title);
+      margin: 0 0 50px 0;
+      span {
+         font-weight: 500;
+      }
+   }
+}

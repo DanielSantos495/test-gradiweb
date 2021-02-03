@@ -1,44 +1,43 @@
+@import '../utils/Mixin.scss';
+
 .BannerHeader {
+   box-shadow: -5px 40px 15px 20px rgba(0, 0, 0, .25) ;
    color: #fff;
    left: 0;
    position: absolute;
    top: 110px;
-   width: 100px;
-   div {
-      align-items: center;
-      display: flex;
-      height: 100px;
-      justify-content: center;
+   @include whateverBox(0 var(--radius) var(--radius) 0, unset, 100px);
+}
+.BannerHeader__weather,
+.BannerHeader__degrees {
+   @include flexModel(flex, center, center);
+}
+.BannerHeader__weather {
+   background: var(--color-secundary);
+   flex-direction: column;
+   position: relative;
+   z-index: 1000;
+   @include whateverBox(0 var(--radius) var(--radius) calc(var(--radius) - 10px), 100px, unset);
+   img {
+      height: 25px;
+      margin: 0 0 10px 0;
+      width: 25px;
    }
-   div:nth-of-type(1) {
-      background: var(--color-primary);
-      border-radius: 0 25px 25px 10px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      z-index: 1000;
-      img {
-         height: 25px;
-         margin: 0 0 10px 0;
-         width: 25px;
-      }
-      p {
-         font-size: var(--font-size-smaller);
-      }
+   p {
+      font-size: var(--font-size-smaller);
    }
-   div:nth-of-type(2) {
-      border-radius: 0 25px 25px 0;
-      height: 130px;
-      margin: -50px 0 0 0;
-      padding: 40px 0 0 0;
-      box-sizing: border-box;
-      background: var(--color-secundary);
-      p {
-         font-size: var(--font-size-big);
-         letter-spacing: -5px;
-      }
-      span {
-         margin: -15px 0 0 0;
-      }
+}
+.BannerHeader__degrees {
+   margin: -50px 0 0 0;
+   padding: 40px 0 0 0;
+   box-sizing: border-box;
+   background: var(--color-primary);
+   @include whateverBox(0 var(--radius) var(--radius) 0, 130px, unset);
+   p {
+      font-size: var(--font-size-big);
+      letter-spacing: -5px;
+   }
+   span {
+      margin: -15px 0 0 0;
    }
 }

@@ -1,0 +1,22 @@
+@import '../utils/Mixin.scss';
+
+.AddLocations {
+   border: 2px dashed var(--color-tertiary);
+   flex-direction: column;
+   margin: 0 0 100px 0;
+   @include whateverBox(var(--radius), 180px, 100%);
+   @include flexModel(flex, flex-end, center);
+   button {
+      @include button(
+         #7b67f036,
+         var(--color-primary),
+         0 0 20px 0,
+         var(--radius),
+         35px,
+         50%
+      )
+   }
+   img {
+      @include whateverBox(var(--radius), 100px, 35%);
+   }
+}

@@ -2,6 +2,7 @@ export const GetData = (url, method = 'GET') => {
 
    return new Promise((resolve, reject) => {
       const request = new XMLHttpRequest()
+
       // Abrimos nueva solicitud
       request.open(method, url, true)
 

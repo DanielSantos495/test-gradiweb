@@ -1,0 +1,27 @@
+@import '../utils/_Mixin.scss';
+
+.PlaceVisit {
+   position: relative;
+   @include whateverBox(unset, 100%, 100%);
+   span {
+      color: #000;
+      left: 20px;
+      position: absolute;
+      top: 20px;
+      @include flexModel(flex, unset, unset);
+      p {
+         color: #fff;
+         font-size: var(--font-size-smaller);
+         font-weight: 700;
+         line-height: calc(var(--font-size-smaller) + 4px );
+         width: 90px;
+      }
+      img {
+         margin: 0 10px 0 0;
+         @include whateverBox(unset, 15px, 15px)
+      }
+   }
+   & > img {
+      @include whateverBox(var(--radius), 260px, 100%);
+   }
+}

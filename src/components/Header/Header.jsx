@@ -2,7 +2,9 @@ import React from 'react'
 
 import { BannerHeader } from './BannerHeader'
 
+import MarkerIcon from '../../assets/icons/marker.png'
 import BogotaImage from '../../assets/images/bogota.jpg'
+
 import '../../styles/components/Header.scss'
 
 export const Header = () => {
@@ -12,7 +14,7 @@ export const Header = () => {
          <div>
             <img src={BogotaImage} alt='Bogota image'/>
             <span>
-               <img src='' alt='Icon mark' />
+               <img src={MarkerIcon} alt='Icon mark' />
                <p>Bogotá</p>
             </span>
          </div>

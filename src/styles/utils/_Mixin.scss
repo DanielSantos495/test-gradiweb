@@ -1,0 +1,28 @@
+@mixin whateverBox( $radius, $height, $width) {
+   border-radius: $radius;
+   height: $height;
+   width: $width;
+}
+
+@mixin flexModel($display, $justify, $align) {
+   display: $display;
+   justify-content: $justify;
+   align-items: $align;
+}
+
+@mixin button($background, $color, $margin, $radius, $height, $width) {
+   background:  $background;
+   border: none;
+   color: $color;
+   cursor: pointer;
+   font-weight: 600;
+   margin: $margin;
+   outline: none;
+   &:active {
+      transform: scale(.99);
+   }
+   &:focus {
+      box-shadow: 0 0 0 2px var(--color-primary);
+   }
+   @include whateverBox($radius, $height, $width);
+}

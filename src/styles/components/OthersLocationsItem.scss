@@ -1,0 +1,52 @@
+@import '../utils/Mixin.scss';
+
+.OthersLocationsItem {
+   background: #fff;
+   box-shadow: 0 8px 20px 1px rgba(0, 0, 0, .25);
+   @include whateverBox(calc(var(--radius) - 5px), 120px, 100%);
+   & > div:nth-of-type(1) {
+      @include whateverBox(unset, 80px, 100%);
+      @include flexModel(flex, space-between, center);
+      & > span:nth-of-type(1) {
+         background: var(--color-tertiary);
+         @include whateverBox(calc(var(--radius) - 5px), 100%, 29%);
+         @include flexModel(flex, center, center);
+         img {
+            @include whateverBox(unset, 40px, 40px);
+         }
+      }
+      & > p {
+         font-size: var(--font-size-big);
+         border-right: 1px solid var(--color-tertiary);
+         span {
+            margin: 0 10px 0 0;
+            font-size: var(--font-size-smaller);
+            top: -18px;
+            position: relative;
+         }
+      }
+      & > span:nth-of-type(2) {
+         flex-direction: column;
+         @include whateverBox(unset, 100%, 35%);
+         @include flexModel(flex, center, unset);
+         p {
+            margin: 0 0 5px 0;
+         }
+         p:nth-of-type(1) {
+            font-weight: 700;
+         }
+         p:nth-of-type(2) {
+            font-size: var(--font-size-smaller);
+         }
+      }
+   }
+   & > div:nth-of-type(2) {
+      @include whateverBox(unset, 40px, 100%);
+      @include flexModel(flex, space-around, center);
+      p {
+         font-size: var(--font-size-smaller);
+         font-weight: 500;
+         opacity: .3;
+      }
+   }
+}

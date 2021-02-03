@@ -1,0 +1,6 @@
+@import '../utils/Mixin.scss';
+
+%section {
+   margin: 0 0 20px 0;
+   @include whateverBox(unset, 350px, 18%)
+}
