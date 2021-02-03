@@ -8,11 +8,12 @@ export const SectionItem = (props) => {
    const {
       children,
       titleBold,
-      titleLight
+      titleLight,
+      otherClass
    } = props
 
    return(
-      <section className='SectionItem'>
+      <section className={`SectionItem ${otherClass}`}>
          <h2><span>{titleBold}</span> {titleLight}</h2>
          {children}
       </section>
@@ -22,5 +23,6 @@ export const SectionItem = (props) => {
 SectionItem.propTypes = {
    children: PropTypes.node.isRequired,
    titleBold: PropTypes.string.isRequired,
-   titleLight: PropTypes.string.isRequired
+   titleLight: PropTypes.string.isRequired,
+   otherClass: PropTypes.string
 }

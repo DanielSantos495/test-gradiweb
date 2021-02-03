@@ -26,3 +26,20 @@
    }
    @include whateverBox($radius, $height, $width);
 }
+
+// Media Queries
+
+@mixin media($breakpoint) {
+
+   @if $breakpoint == small {
+     @media screen and (max-width: 641px) {
+       @content;
+     }
+   }
+   @else if $breakpoint == mid {
+     @media screen and (min-width: 641px) and (max-width: 1024px) {
+       @content;
+     }
+   }
+
+}

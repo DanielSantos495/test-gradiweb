@@ -12,7 +12,7 @@ export const OthersLocations = () => {
    const API = (country) => `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${config.key}`
 
    return(
-      <div className='OthersLocations'>
+      <section className='OthersLocations'>
          <ul>
             <li>
                <OthersLocationsItem
@@ -26,6 +26,6 @@ export const OthersLocations = () => {
             </li>
          </ul>
          <AddLocations />
-      </div>
+      </section>
    )
 }

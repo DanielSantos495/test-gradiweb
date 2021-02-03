@@ -3,7 +3,44 @@
 .OthersLocations {
    margin: -140px 0 20px 0;
    padding: 0 50px 0 0;
+   position: relative;
    @include whateverBox(unset, 350px, 25%);
+   @include media(mid) {
+      @include whateverBox(unset, 350px, 90%);
+      ul {
+         position: relative;
+         li:nth-of-type(1) {
+            position: relative;
+            top: 130px;
+            transition: top .5s ease-in-out;
+            z-index: 1000;
+            &:hover {
+               top: 0;
+            }
+         }
+
+      }
+   }
+   @include media(small) {
+      @include whateverBox(unset, 350px, 79%);
+      ul {
+         position: relative;
+         li:nth-of-type(1) {
+            position: relative;
+            top: 130px;
+            transition: top .5s ease-in-out;
+            z-index: 1000;
+            &:hover {
+               top: 0;
+            }
+         }
+
+      }
+   }
+   @include media(small) {
+      grid-area: otherslocations;
+      @include whateverBox(unset, 350px, 90%);
+   }
    li {
       margin: 0 0 25px 0;
    }

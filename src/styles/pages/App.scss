@@ -1,10 +1,23 @@
-.Main,
-.Loader__container {
-   display: flex;
-   justify-content: space-between;
+@import '../utils/Mixin.scss';
+
+.Main {
    width: 100%;
+   @include flexModel(flex, space-between, unset);
+   @include media(mid) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+   @include media(small) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 400px);
+      grid-template-areas: "forecast"
+                           "otherslocations"
+                           "reviews"
+                           "tovisit";
+   }
 }
 .Loader__container {
    margin: 250px 0 0 0;
-   justify-content: center;
+   @include flexModel(flex, center, unset)
 }

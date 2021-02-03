@@ -12,6 +12,7 @@ export const PlaceVisit = () => {
       <SectionItem
          titleBold='Place to'
          titleLight='Visit'
+         otherClass='PlaceVisit__grid'
       >
       <div className='PlaceVisit'>
          <span>

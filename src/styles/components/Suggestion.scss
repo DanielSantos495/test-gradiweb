@@ -2,10 +2,15 @@
 
 .Suggestion {
    @extend %section;
+   @include media(small) {
+      grid-area: reviews;
+   }
 }
 .Suggestion__reviews {
    margin: 0 0 50px 0;
    @include flexModel(flex, space-between, center);
+   @include media(small) {
+   }
    div:nth-of-type(1) {
       @include flexModel(flex, unset, center);
       img {

@@ -1,5 +1,10 @@
 @import '../utils/_Mixin.scss';
 
+.PlaceVisit__grid {
+   @include media(small) {
+      grid-area: tovisit;
+   }
+}
 .PlaceVisit {
    position: relative;
    @include whateverBox(unset, 100%, 100%);

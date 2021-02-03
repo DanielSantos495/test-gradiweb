@@ -2,5 +2,11 @@
 
 %section {
    margin: 0 0 20px 0;
-   @include whateverBox(unset, 350px, 18%)
+   @include whateverBox(unset, 350px, 18%);
+   @include media(mid) {
+      @include whateverBox(unset, 350px, 90%);
+   }
+   @include media(small) {
+      @include whateverBox(unset, 350px, 90%);
+   }
 }

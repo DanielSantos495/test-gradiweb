@@ -1,3 +1,11 @@
+@import '../utils/Mixin.scss';
+
+.Forecast__grid {
+   @include media(small) {
+      grid-area: forecast;
+   }
+}
+
 li {
    margin: 0 0 10px 0;
 }

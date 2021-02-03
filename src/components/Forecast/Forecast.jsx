@@ -57,6 +57,7 @@ export const Forecast = () => {
       <SectionItem
          titleBold='3 Days'
          titleLight='Forecast'
+         otherClass='Forecast__grid'
       >
          <GetDataContainer api={API}>
             {renderProp}
