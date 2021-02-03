@@ -1,5 +1,10 @@
-.Main {
+.Main,
+.Loader__container {
    display: flex;
    justify-content: space-between;
    width: 100%;
+}
+.Loader__container {
+   margin: 250px 0 0 0;
+   justify-content: center;
 }

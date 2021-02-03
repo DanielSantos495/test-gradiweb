@@ -1,0 +1,29 @@
+@import '../utils/Mixin.scss';
+
+.Loader {
+   display: flex;
+   @include flexModel(flex, space-between, center);
+   transition: transform 1s ease-in-out;
+   div {
+      animation: name duration timing-function delay iteration-count direction fill-mode;
+      animation: firstItem 1.2s infinite ease-in-out both;
+      background: var(--color-primary);
+      border-radius: 2px;
+   }
+   div:nth-of-type(2) {
+      animation-delay: .4s;
+   }
+   div:nth-of-type(3) {
+      animation-delay: .8s;
+
+   }
+}
+
+@keyframes firstItem {
+   0%, 80%, 100% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}

@@ -3,7 +3,7 @@
 .OthersLocationsItem {
    background: #fff;
    box-shadow: 0 8px 20px 1px rgba(0, 0, 0, .25);
-   @include whateverBox(calc(var(--radius) - 5px), 120px, 100%);
+   @include whateverBox(calc(var(--radius) - 5px), 115px, 100%);
    & > div:nth-of-type(1) {
       @include whateverBox(unset, 80px, 100%);
       @include flexModel(flex, space-between, center);
@@ -12,7 +12,7 @@
          @include whateverBox(calc(var(--radius) - 5px), 100%, 29%);
          @include flexModel(flex, center, center);
          img {
-            @include whateverBox(unset, 40px, 40px);
+            @include whateverBox(unset, 70px, 70px);
          }
       }
       & > p {
@@ -33,7 +33,7 @@
             margin: 0 0 5px 0;
          }
          p:nth-of-type(1) {
-            font-weight: 700;
+            font-weight: 500;
          }
          p:nth-of-type(2) {
             font-size: var(--font-size-smaller);

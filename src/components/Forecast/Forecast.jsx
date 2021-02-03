@@ -3,6 +3,7 @@ import React from 'react'
 import { ForecastItem } from './ForecastItem'
 import { SectionItem } from '../SectionItem/SectionItem'
 import { GetDataContainer } from '../../containers/GetDataContainer'
+import { Loader } from '../Loader/Loader'
 
 import config from '../../../config'
 
@@ -12,6 +13,14 @@ const renderProp = ({ loading, error, data }) => {
 
    const { daily = [{}]} = data
    const ThreeDaysForecast = daily.filter((item, i) =>  i < 3)
+
+   if (loading) return <Loader
+                           height={'15px'}
+                           width={'35px'}
+                           heightChild={'10px'}
+                           widthChild={'10px'}
+                        />
+   if(error) return <p>¡Se rompio :O!</p>
 
    return(
       <ul>
@@ -26,7 +35,7 @@ const renderProp = ({ loading, error, data }) => {
                         {...item}
                      />
                      :
-                     <ForecastItem {...item} />
+                     <ForecastItem index={i} {...item} />
                   }
                </li>
             )

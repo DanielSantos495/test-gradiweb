@@ -4,7 +4,7 @@
    border: 2px dashed var(--color-tertiary);
    flex-direction: column;
    margin: 0 0 100px 0;
-   @include whateverBox(var(--radius), 180px, 100%);
+   @include whateverBox(var(--radius), 200px, 100%);
    @include flexModel(flex, flex-end, center);
    button {
       @include button(
