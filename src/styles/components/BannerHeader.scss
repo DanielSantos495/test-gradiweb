@@ -19,9 +19,8 @@
    z-index: 1000;
    @include whateverBox(0 var(--radius) var(--radius) calc(var(--radius) - 10px), 100px, unset);
    img {
-      height: 25px;
-      margin: 0 0 10px 0;
-      width: 25px;
+      margin: 0 0 -12px 0;
+   @include whateverBox(unset, 70px, 70px);
    }
    p {
       font-size: var(--font-size-smaller);
